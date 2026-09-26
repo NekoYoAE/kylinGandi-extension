@@ -5,7 +5,7 @@
 
 **Gandi IDE 适配版**
 
-## 原作者为[FurryR](https://github.com/FurryR)
+## 原作者为[FurryR](https://github.com/FurryR)，[原仓库](https://github.com/FurryR/Kylin)
 
 </div>
 
