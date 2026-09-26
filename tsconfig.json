@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "sourceMap": false,
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "target": "ESNext",
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
+    "resolveJsonModule": true,
+    "allowJs": true,
+    "checkJs": false,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "noEmit": true,
+    "strict": false,
+    "noImplicitAny": false,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "noImplicitReturns": false,
+    "noFallthroughCasesInSwitch": false,
+    "types": [],
+    "baseUrl": "."
+  },
+  "include": ["types/**/*", "src/**/*", "tsup.config.ts", "package.json"]
+}

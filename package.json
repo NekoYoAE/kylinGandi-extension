@@ -1,0 +1,23 @@
+{
+  "name": "kylinGandi-extension",
+  "version": "1.0.0",
+  "description": "Project Kylin - Gandi IDE (ccw.site) 适配版：对 Gandi 作品进行传统混淆 + 预编译 + 作品签名。",
+  "main": "dist/index.global.js",
+  "private": true,
+  "scripts": {
+    "start": "tsup src/index.ts && http-server ./dist -p 8080 --cors",
+    "build": "tsup src/index.ts",
+    "build:min": "tsup src/index.ts --minify",
+    "typecheck": "tsc --noEmit -p ./tsconfig.json"
+  },
+  "author": "FurryR (原作者) / Gandi 适配",
+  "license": "AGPL-3.0-only",
+  "devDependencies": {
+    "http-server": "^14.1.1",
+    "tsup": "^8.0.2",
+    "typescript": "^5.4.3"
+  },
+  "dependencies": {
+    "terser": "^5.34.0"
+  }
+}
