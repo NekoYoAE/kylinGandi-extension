@@ -2,7 +2,7 @@ import { minify } from 'terser'
 import l10n from './l10n'
 import { kylinRuntime } from './runtime'
 
-export const EXTENSION_ID = 'kylin'
+export const EXTENSION_ID = 'KylinGandi'
 export const RUNTIME_ID = 'kylinRuntime'
 
 export type Translator = ((message: Message) => string) & {
@@ -110,7 +110,7 @@ export function loadedExtensionsMap(
 
 export async function refreshPalette(
   runtime: any,
-  extensionIds: string[] = ['kylin', 'kylinRuntime']
+  extensionIds: string[] = [EXTENSION_ID, RUNTIME_ID]
 ): Promise<void> {
   const em = runtime && runtime.extensionManager
   if (!em || typeof em.refreshBlocks !== 'function') return

@@ -1,6 +1,7 @@
 import uid from './random'
 import Obfuscator from './obfuscator'
 import { minify } from 'terser'
+import { EXTENSION_ID, RUNTIME_ID } from './gandi'
 
 export interface CompileFailure {
   topBlockId: string
@@ -250,7 +251,7 @@ export async function compile(
   }
 
   const isKylinExtension = (id: string) =>
-    id === 'kylin' || id === 'kylinRuntime' || id.startsWith('kylinRuntime')
+    id === EXTENSION_ID || id === RUNTIME_ID || id.startsWith(RUNTIME_ID)
 
   const extensionIdOf = (opcode: string) => {
     const index = opcode.indexOf('_')

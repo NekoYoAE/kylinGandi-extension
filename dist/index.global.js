@@ -31064,6 +31064,653 @@
     return val.value;
   }
 
+  // src/l10n.ts
+  var l10n_default = {
+    "zh-cn": {
+      "kylin.name": "\u{1F409} Kylin (Gandi)",
+      "kylin.hint.about": "\u5173\u4E8E Kylin",
+      "kylin.hint.obfuscated": "\u6E90\u4EE3\u7801\u6DF7\u6DC6",
+      "kylin.hint.precompiled": "\u9884\u7F16\u8BD1",
+      "kylin.hint.comment": "\u6CE8\u91CA",
+      "kylin.hint.loading": "\u7A0D\u5B89\u52FF\u8E81...",
+      "kylin.hint.protected": "\u4F5C\u54C1\u5DF2\u88AB\u4FDD\u62A4",
+      "kylin.hint.extInterp": "\u7B2C\u4E09\u65B9\u6269\u5C55\u811A\u672C",
+      "kylin.extInterp.keep": "\u89E3\u91CA\u6267\u884C",
+      "kylin.extInterp.compile": "\u4E00\u5E76\u7F16\u8BD1",
+      "kylin.error.noRuntimeAsset": "\u7531\u4E8E\u4FEE\u6539\u8005\u6C34\u5E73\u95EE\u9898\u5C1A\u672A\u5728Gandi\u5B9E\u73B0\u8BE5\u529F\u80FD\uFF0C\u9884\u7F16\u8BD1\u65E0\u6CD5\u8FDB\u884C\u3002\n\u8BF7\u5173\u95ED\u300C\u9884\u7F16\u8BD1\u300D\uFF0C\u53EA\u4F7F\u7528\u300C\u6E90\u4EE3\u7801\u6DF7\u6DC6\u300D",
+      "kylin.error.runtimeUploadFailed": "\u8FD0\u884C\u65F6\u8D44\u6E90\u4E0A\u4F20\u5931\u8D25\uFF08storage.store \u6CA1\u6709\u8FD4\u56DE ok\uFF09\u3002\u8BF7\u68C0\u67E5\u767B\u5F55\u72B6\u6001\u4E0E\u7F51\u7EDC\uFF0C\u6216\u5173\u95ED\u300C\u9884\u7F16\u8BD1\u300D\u3002",
+      "kylin.alert.restored": "\u6DF7\u6DC6\u5931\u8D25\uFF0C\u4F5C\u54C1\u5DF2\u8FD8\u539F\u5230\u6DF7\u6DC6\u524D\u7684\u72B6\u6001\u3002",
+      "kylin.button.comments": "\u6CE8\u91CA",
+      "kylin.button.uuid": "UUID (\u9AD8\u7EA7)",
+      "kylin.button.proceed": "\u6DF7\u6DC6",
+      "kylin.popup.comment": "\u8BF7\u8F93\u5165\u4F5C\u54C1\u7684\u6CE8\u91CA\u3002",
+      "kylin.popup.uuid": "\u8BF7\u8F93\u5165\u4F5C\u54C1\u7684 v4 UUID\u3002",
+      "kylin.popup.uuid.invalid": "\u65E0\u6548\u7684 v4 UUID\u3002",
+      "kylin.error.nonScratch": "Kylin \u5FC5\u987B\u5728 Scratch / Gandi IDE \u73AF\u5883\u4E2D\u8FD0\u884C\u3002",
+      "kylin.error.sandbox": "Kylin \u4E0D\u652F\u6301\u6C99\u76D2\u6A21\u5F0F\uFF0C\u8BF7\u4EE5\u201C\u975E\u6C99\u76D2\u201D\u65B9\u5F0F\u52A0\u8F7D\u672C\u6269\u5C55\u3002",
+      "kylin.error.noCompiler": "\u5F53\u524D\u73AF\u5883\u6CA1\u6709\u53EF\u7528\u7684\u7F16\u8BD1\u5668\uFF08runtime.precompile \u4E0D\u5B58\u5728\uFF09\uFF0C\u65E0\u6CD5\u4F7F\u7528\u9884\u7F16\u8BD1\u529F\u80FD\u3002",
+      "kylin.error.noVM": "\u65E0\u6CD5\u83B7\u53D6 Gandi \u865A\u62DF\u673A\u7684\u5F15\u7528\uFF0C\u6DF7\u6DC6\u5DF2\u4E2D\u6B62\u3002",
+      "kylin.error.noEditor": "\u8FD9\u662F\u6DF7\u6DC6\u540E\u7684\u4F5C\u54C1\uFF0C\u8BF7\u5728\u7F16\u8F91\u5668\u4E2D\u52A0\u8F7D\u672C\u6269\u5C55\u4EE5\u67E5\u770B\u4F5C\u54C1\u4FE1\u606F\u3002",
+      "kylin.confirm.compileFail": "\u4EE5\u4E0B\u811A\u672C\u65E0\u6CD5\u88AB\u7F16\u8BD1\uFF0C\u5B83\u4EEC\u4F1A\u4FDD\u6301\u300C\u89E3\u91CA\u6267\u884C\u300D\uFF08\u4E0D\u4F1A\u88AB\u5220\u9664\uFF0C\u529F\u80FD\u4E0D\u53D7\u5F71\u54CD\uFF09\uFF1A",
+      "kylin.confirm.compileFailTail": "\u662F\u5426\u7EE7\u7EED\uFF1F",
+      "kylin.confirm.irreversible": "\u26A0\uFE0F\u6DF7\u6DC6\u4EE3\u7801\u662F\u4E0D\u53EF\u9006\u7684\uFF0C\u8BF7\u786E\u4FDD\u4F5C\u54C1\u6E90\u7801\u5DF2\u5907\u4EFD\u26A0\uFE0F",
+      "kylin.confirm.danglingRefs": "\u81EA\u68C0\u53D1\u73B0\u6DF7\u6DC6\u540E\u6709\u79EF\u6728\u5F15\u7528\u4E86\u4E0D\u5B58\u5728\u7684\u4E1C\u897F\uFF0C\u8FD9\u4E9B\u811A\u672C\u5F88\u53EF\u80FD\u4F1A\u5931\u6548\uFF1A",
+      "kylin.confirm.restoreSnapshot": "\u662F\u5426\u8FD8\u539F\u5230\u6DF7\u6DC6\u524D\u7684\u4F5C\u54C1\uFF1F\uFF08\u5EFA\u8BAE\u8FD8\u539F\uFF09",
+      "kylin.alert.about": "Kylin \u662F Scratch / TurboWarp \u751F\u6001\u7684\u6DF7\u6DC6\u5668\uFF0C\u672C\u7248\u672C\u9488\u5BF9 Gandi IDE (ccw.site) \u505A\u4E86\u9002\u914D\u3002\n\n\u26A0\uFE0F\u6DF7\u6DC6\u524D\u8BF7\u201C\u4FDD\u5B58\u5230\u7535\u8111\u201D\u5907\u4EFD\u4F5C\u54C1\uFF0C\u6DF7\u6DC6\u662F\u4E0D\u53EF\u9006\u7684\u26A0\uFE0F",
+      "kylinRuntime.name": "\u{1F6E0}\uFE0F Kylin Runtime",
+      "kylinRuntime.description": "Kylin \u6DF7\u6DC6\u4F5C\u54C1\u7684\u8FD0\u884C\u65F6\u3002\u52A0\u8F7D\u672C\u4F5C\u54C1\u65F6\u5FC5\u987B\u5141\u8BB8\u8BE5\u6269\u5C55\u4EE5\u975E\u6C99\u76D2\u65B9\u5F0F\u8FD0\u884C\u3002",
+      "kylinRuntime.about": "\u5173\u4E8E Kylin",
+      "kylinRuntime.compile": "(\u5DF2\u7F16\u8BD1)"
+    },
+    en: {
+      "kylin.name": "\u{1F409} Kylin (Gandi)",
+      "kylin.hint.about": "About Kylin",
+      "kylin.hint.obfuscated": "Obfuscation",
+      "kylin.hint.precompiled": "Precompilation",
+      "kylin.hint.comment": "Comment",
+      "kylin.hint.loading": "Loading...",
+      "kylin.hint.protected": "Project protected",
+      "kylin.hint.extInterp": "Third-party ext blocks",
+      "kylin.extInterp.keep": "Interpret",
+      "kylin.extInterp.compile": "Compile",
+      "kylin.error.noRuntimeAsset": 'This environment cannot carry the runtime as a Gandi "Extension" project asset, so precompilation is unavailable.\nTurn off "Precompilation" and use "Obfuscation" only.',
+      "kylin.error.runtimeUploadFailed": 'Failed to upload the runtime asset (storage.store did not return ok). Check your session/network, or turn off "Precompilation".',
+      "kylin.alert.restored": "The project has been restored to its pre-obfuscation state.",
+      "kylin.button.comments": "Comments",
+      "kylin.button.uuid": "UUID (Advanced)",
+      "kylin.button.proceed": "Proceed",
+      "kylin.popup.comment": "Please input the project's comment.",
+      "kylin.popup.uuid": "Please input the project's v4 UUID.",
+      "kylin.popup.uuid.invalid": "Invalid v4 UUID.",
+      "kylin.error.nonScratch": "Kylin must be running inside Scratch / Gandi IDE.",
+      "kylin.error.sandbox": "Sandboxed mode is not supported. Load this extension unsandboxed.",
+      "kylin.error.noCompiler": "No compiler available (runtime.precompile is missing), precompilation is unavailable.",
+      "kylin.error.noVM": "Unable to reach the Gandi VM, aborting.",
+      "kylin.error.noEditor": "This project has been obfuscated. Load the extension in the editor to inspect its metadata.",
+      "kylin.confirm.compileFail": "The following scripts cannot be compiled and will be kept interpreted (not removed):",
+      "kylin.confirm.compileFailTail": "Continue?",
+      "kylin.confirm.irreversible": "\u26A0\uFE0FObfuscation is irreversible. Make sure you have backed up your project source.\u26A0\uFE0F",
+      "kylin.confirm.danglingRefs": "Self-check found blocks referencing things that no longer exist. Those scripts will probably break:",
+      "kylin.confirm.restoreSnapshot": "Restore the project to its pre-obfuscation state? (recommended)",
+      "kylin.alert.about": "Kylin is an obfuscator for the Scratch / TurboWarp ecosystem; this build targets Gandi IDE (ccw.site).\n\nBack up your project before obfuscating \u2014 it is irreversible.",
+      "kylinRuntime.name": "\u{1F6E0}\uFE0F Kylin Runtime",
+      "kylinRuntime.description": "Runtime of a Kylin-obfuscated project. It must be allowed to run unsandboxed.",
+      "kylinRuntime.about": "About Kylin",
+      "kylinRuntime.compile": "(Compiled)"
+    },
+    ja: {
+      "kylin.name": "\u{1F409} Kylin (Gandi)",
+      "kylin.hint.about": "Kylin \u306B\u3064\u3044\u3066",
+      "kylin.hint.obfuscated": "\u96E3\u8AAD\u5316",
+      "kylin.hint.precompiled": "\u4E8B\u524D\u30B3\u30F3\u30D1\u30A4\u30EB",
+      "kylin.hint.comment": "\u30B3\u30E1\u30F3\u30C8",
+      "kylin.hint.loading": "\u5C11\u3005\u304A\u5F85\u3061\u304F\u3060\u3055\u3044\u3002",
+      "kylin.hint.protected": "\u4FDD\u8B77\u3055\u308C\u305F\u30D7\u30ED\u30B8\u30A7\u30AF\u30C8",
+      "kylin.hint.extInterp": "\u30B5\u30FC\u30C9\u30D1\u30FC\u30C6\u30A3\u62E1\u5F35",
+      "kylin.extInterp.keep": "\u30A4\u30F3\u30BF\u30D7\u30EA\u30BF",
+      "kylin.extInterp.compile": "\u30B3\u30F3\u30D1\u30A4\u30EB",
+      "kylin.error.noRuntimeAsset": "\u3053\u306E\u74B0\u5883\u3067\u306F\u30E9\u30F3\u30BF\u30A4\u30E0\u3092 Gandi \u306E \u201CExtension\u201D \u30A2\u30BB\u30C3\u30C8\u3068\u3057\u3066\u767B\u9332\u3067\u304D\u306A\u3044\u305F\u3081\u3001\u4E8B\u524D\u30B3\u30F3\u30D1\u30A4\u30EB\u306F\u4F7F\u3048\u307E\u305B\u3093\u3002\n\u300C\u4E8B\u524D\u30B3\u30F3\u30D1\u30A4\u30EB\u300D\u3092\u5207\u308A\u3001\u300C\u96E3\u8AAD\u5316\u300D\u306E\u307F\u3092\u4F7F\u7528\u3057\u3066\u304F\u3060\u3055\u3044\u3002",
+      "kylin.error.runtimeUploadFailed": "\u30E9\u30F3\u30BF\u30A4\u30E0\u30A2\u30BB\u30C3\u30C8\u306E\u30A2\u30C3\u30D7\u30ED\u30FC\u30C9\u306B\u5931\u6557\u3057\u307E\u3057\u305F\uFF08storage.store \u304C ok \u3092\u8FD4\u3057\u307E\u305B\u3093\u3067\u3057\u305F\uFF09\u3002",
+      "kylin.alert.restored": "\u96E3\u8AAD\u5316\u306B\u5931\u6557\u3057\u307E\u3057\u305F\u3002\u4F5C\u54C1\u3092\u5143\u306E\u72B6\u614B\u306B\u623B\u3057\u307E\u3057\u305F\u3002",
+      "kylin.button.comments": "\u30B3\u30E1\u30F3\u30C8",
+      "kylin.button.uuid": "UUID (\u4E0A\u7D1A\u8005\u5411\u3051)",
+      "kylin.button.proceed": "\u96E3\u8AAD\u5316\u3059\u308B",
+      "kylin.popup.comment": "\u30D7\u30ED\u30B8\u30A7\u30AF\u30C8\u306E\u30B3\u30E1\u30F3\u30C8\u3092\u5165\u529B\u3057\u3066\u304F\u3060\u3055\u3044\u3002",
+      "kylin.popup.uuid": "\u30D7\u30ED\u30B8\u30A7\u30AF\u30C8\u306E v4 UUID \u3092\u5165\u529B\u3057\u3066\u304F\u3060\u3055\u3044\u3002",
+      "kylin.popup.uuid.invalid": "\u7121\u52B9\u306A v4 UUID \u3067\u3059\u3002",
+      "kylin.error.nonScratch": "Kylin \u306F Scratch / Gandi IDE \u4E0A\u3067\u5B9F\u884C\u3059\u308B\u5FC5\u8981\u304C\u3042\u308A\u307E\u3059\u3002",
+      "kylin.error.sandbox": "\u30B5\u30F3\u30C9\u30DC\u30C3\u30AF\u30B9\u30E2\u30FC\u30C9\u306F\u5BFE\u5FDC\u3057\u3066\u3044\u307E\u305B\u3093\u3002\u975E\u30B5\u30F3\u30C9\u30DC\u30C3\u30AF\u30B9\u3067\u8AAD\u307F\u8FBC\u3093\u3067\u304F\u3060\u3055\u3044\u3002",
+      "kylin.error.noCompiler": "\u30B3\u30F3\u30D1\u30A4\u30E9\u30FC\u304C\u898B\u3064\u304B\u308A\u307E\u305B\u3093\uFF08runtime.precompile \u304C\u3042\u308A\u307E\u305B\u3093\uFF09\u3002",
+      "kylin.error.noVM": "Gandi \u306E\u4EEE\u60F3\u30DE\u30B7\u30F3\u3092\u53D6\u5F97\u3067\u304D\u307E\u305B\u3093\u3067\u3057\u305F\u3002",
+      "kylin.error.noEditor": "\u3053\u306E\u4F5C\u54C1\u306F\u3059\u3067\u306B\u96E3\u8AAD\u5316\u3055\u308C\u3066\u3044\u307E\u3059\u3002\u30E1\u30BF\u30C7\u30FC\u30BF\u3092\u898B\u308B\u306B\u306F\u30A8\u30C7\u30A3\u30BF\u30FC\u3067\u62E1\u5F35\u3092\u8AAD\u307F\u8FBC\u3093\u3067\u304F\u3060\u3055\u3044\u3002",
+      "kylin.confirm.compileFail": "\u4EE5\u4E0B\u306E\u30B9\u30AF\u30EA\u30D7\u30C8\u306F\u30B3\u30F3\u30D1\u30A4\u30EB\u3067\u304D\u307E\u305B\u3093\u3002\u30A4\u30F3\u30BF\u30D7\u30EA\u30BF\u5B9F\u884C\u3068\u3057\u3066\u305D\u306E\u307E\u307E\u6B8B\u3057\u307E\u3059\uFF08\u524A\u9664\u3055\u308C\u307E\u305B\u3093\uFF09\uFF1A",
+      "kylin.confirm.compileFailTail": "\u7D9A\u884C\u3057\u307E\u3059\u304B\uFF1F",
+      "kylin.confirm.irreversible": "\u26A0\uFE0F\u96E3\u8AAD\u5316\u306F\u5143\u306B\u623B\u305B\u307E\u305B\u3093\u3002\u4F5C\u54C1\u306E\u30BD\u30FC\u30B9\u3092\u5FC5\u305A\u30D0\u30C3\u30AF\u30A2\u30C3\u30D7\u3057\u3066\u304F\u3060\u3055\u3044\u3002\u26A0\uFE0F",
+      "kylin.confirm.danglingRefs": "\u81EA\u5DF1\u30C1\u30A7\u30C3\u30AF\u3067\u3001\u5B58\u5728\u3057\u306A\u3044\u3082\u306E\u3092\u53C2\u7167\u3057\u3066\u3044\u308B\u30D6\u30ED\u30C3\u30AF\u304C\u898B\u3064\u304B\u308A\u307E\u3057\u305F\u3002\u3053\u308C\u3089\u306E\u30B9\u30AF\u30EA\u30D7\u30C8\u306F\u52D5\u4F5C\u3057\u306A\u304F\u306A\u308B\u53EF\u80FD\u6027\u304C\u3042\u308A\u307E\u3059\uFF1A",
+      "kylin.confirm.restoreSnapshot": "\u96E3\u8AAD\u5316\u524D\u306E\u72B6\u614B\u306B\u623B\u3057\u307E\u3059\u304B\uFF1F\uFF08\u63A8\u5968\uFF09",
+      "kylin.alert.about": "Kylin \u306F Scratch / TurboWarp \u5411\u3051\u306E\u96E3\u8AAD\u5316\u30C4\u30FC\u30EB\u3067\u3059\u3002\u3053\u306E\u30D3\u30EB\u30C9\u306F Gandi IDE (ccw.site) \u5411\u3051\u306B\u8ABF\u6574\u3055\u308C\u3066\u3044\u307E\u3059\u3002\n\n\u96E3\u8AAD\u5316\u306F\u5143\u306B\u623B\u305B\u307E\u305B\u3093\u3002\u4E8B\u524D\u306B\u4F5C\u54C1\u3092\u4FDD\u5B58\u3057\u3066\u304F\u3060\u3055\u3044\u3002",
+      "kylinRuntime.name": "\u{1F6E0}\uFE0F Kylin Runtime",
+      "kylinRuntime.description": "Kylin \u3067\u96E3\u8AAD\u5316\u3055\u308C\u305F\u4F5C\u54C1\u306E\u30E9\u30F3\u30BF\u30A4\u30E0\u3067\u3059\u3002\u975E\u30B5\u30F3\u30C9\u30DC\u30C3\u30AF\u30B9\u3067\u306E\u5B9F\u884C\u304C\u5FC5\u8981\u3067\u3059\u3002",
+      "kylinRuntime.about": "Kylin \u306B\u3064\u3044\u3066",
+      "kylinRuntime.compile": "(\u30B3\u30F3\u30D1\u30A4\u30EB\u6E08)"
+    }
+  };
+
+  // src/runtime.ts
+  async function kylinRuntime(Scratch, version2, sourceMap) {
+    if (!Scratch || Scratch.extensions && Scratch.extensions.unsandboxed === false) {
+      throw new Error("Kylin Runtime \u9700\u8981\u4EE5\u975E\u6C99\u76D2\u65B9\u5F0F\u8FD0\u884C\u3002");
+    }
+    const vm = Scratch.vm;
+    const runtime = vm && vm.runtime;
+    if (!runtime) {
+      throw new Error("Kylin Runtime: \u65E0\u6CD5\u83B7\u53D6 runtime\u3002");
+    }
+    if (typeof runtime.precompile !== "function") {
+      throw new Error("Kylin Runtime: \u5F53\u524D\u73AF\u5883\u6CA1\u6709\u53EF\u7528\u7684\u7F16\u8BD1\u5668\u3002");
+    }
+    runtime._kylinSourceMap = sourceMap;
+    const hasKylinBlocks = () => {
+      const targets = runtime.targets || [];
+      for (let i = 0; i < targets.length; i++) {
+        const blocks = targets[i] && targets[i].blocks && targets[i].blocks._blocks;
+        if (!blocks) continue;
+        for (const id in blocks) {
+          if (blocks[id] && blocks[id].opcode === "kylinRuntime_compile") {
+            return true;
+          }
+        }
+      }
+      return false;
+    };
+    if (!runtime._kylinPatched) {
+      runtime._kylinPatched = true;
+      const _setCompilerOptions = runtime.setCompilerOptions;
+      runtime.setCompilerOptions = function(options) {
+        const next = Object.assign({}, options, { warpTimer: false });
+        if (hasKylinBlocks()) {
+          next.enabled = true;
+        }
+        return _setCompilerOptions.call(this, next);
+      };
+      const { JSGenerator, IRGenerator } = vm.exports.i_will_not_ask_for_help_when_these_break();
+      const originalDescendStack = JSGenerator.prototype.descendStack;
+      const originalCreateScriptFactory = JSGenerator.prototype.createScriptFactory;
+      const originalGenerate = IRGenerator.prototype.generate;
+      const isKylinEntry = (entry) => !!(entry && entry.blocks);
+      const isKylinTopBlock = (blocks, topBlockId) => {
+        if (!blocks || !topBlockId) return false;
+        const top = blocks.getBlock(topBlockId);
+        const nextId = top && top.next;
+        const next = nextId ? blocks.getBlock(nextId) : null;
+        return !!next && next.opcode === "kylinRuntime_compile";
+      };
+      JSGenerator.prototype.descendStack = function(stack, frame) {
+        if (isKylinEntry(this.script)) return;
+        return originalDescendStack.call(this, stack, frame);
+      };
+      IRGenerator.prototype.generate = function() {
+        const thread = this.thread || {};
+        const blocks = this.blocks;
+        const topBlockId = thread.topBlock;
+        if (!isKylinTopBlock(blocks, topBlockId)) {
+          return originalGenerate.call(this);
+        }
+        const registered = {};
+        const register = (proccode, definitionId, definitionBlocks) => {
+          if (!proccode || registered[proccode]) return;
+          registered[proccode] = true;
+          const info = {
+            topBlockId: definitionId,
+            isWarp: false,
+            isProcedure: true,
+            warpTimer: false,
+            blocks: definitionBlocks
+          };
+          this.procedures["W" + proccode] = info;
+          this.procedures["Z" + proccode] = info;
+        };
+        const registerAllIn = (container) => {
+          if (!container || !container._blocks) return;
+          for (const id in container._blocks) {
+            const block = container._blocks[id];
+            if (!block || block.opcode !== "procedures_prototype" || !block.mutation) {
+              continue;
+            }
+            const definition = container.getBlock(block.parent);
+            if (!definition) continue;
+            const bodyId = definition.next;
+            const body = bodyId ? container.getBlock(bodyId) : null;
+            if (!body || body.opcode !== "kylinRuntime_compile") continue;
+            register("" + block.mutation.proccode, block.parent, container);
+          }
+        };
+        registerAllIn(blocks);
+        try {
+          const stage = typeof runtime.getTargetForStage === "function" ? runtime.getTargetForStage() : null;
+          if (stage && stage.blocks && stage.blocks !== blocks) {
+            registerAllIn(stage.blocks);
+          }
+        } catch (e) {
+          console.warn("Kylin Runtime: \u767B\u8BB0\u5168\u5C40\u81EA\u5236\u79EF\u6728\u5931\u8D25", e);
+        }
+        return {
+          entry: {
+            topBlockId,
+            isWarp: false,
+            isProcedure: false,
+            warpTimer: false,
+            blocks
+          },
+          procedures: this.procedures
+        };
+      };
+      JSGenerator.prototype.createScriptFactory = function() {
+        const entry = this.script;
+        if (!isKylinEntry(entry)) {
+          return originalCreateScriptFactory.call(this);
+        }
+        const blocks = entry.blocks;
+        const topBlock = blocks.getBlock(entry.topBlockId);
+        const nextId = topBlock && topBlock.next;
+        const next = nextId ? blocks.getBlock(nextId) : null;
+        if (!next) {
+          return "(function(){return function*(){retire();return;};})";
+        }
+        if (next.opcode === "kylinRuntime_compile") {
+          const table = runtime._kylinSourceMap || sourceMap;
+          const index = parseInt("" + next.fields.code.value, 10);
+          const code = table[index];
+          if (typeof code !== "string") {
+            throw new Error("Kylin Runtime: \u7F3A\u5C11\u5DF2\u7F16\u8BD1\u7684\u811A\u672C " + index);
+          }
+          return "(" + code + ")";
+        }
+        throw new Error("Kylin Runtime: \u9884\u671F\u4E4B\u5916\u7684\u811A\u672C\u7ED3\u6784");
+      };
+      try {
+        runtime.on("PROJECT_LOADED", function() {
+          if (hasKylinBlocks()) runtime.setCompilerOptions({ enabled: true });
+        });
+        runtime.on("targetsUpdate", function() {
+          if (!runtime.compilerOptions.enabled && hasKylinBlocks()) {
+            runtime.setCompilerOptions({ enabled: true });
+          }
+        });
+      } catch (e) {
+      }
+    }
+    try {
+      if (typeof runtime.resetAllCaches === "function") runtime.resetAllCaches();
+    } catch (e) {
+    }
+    const translate = Scratch.translate || function(message) {
+      return typeof message === "string" ? message : message && message.default || "";
+    };
+    if (typeof translate.setup === "function") {
+      try {
+        translate.setup({
+          "zh-cn": {
+            "kylinRuntime.name": "\u{1F6E0}\uFE0F Kylin Runtime",
+            "kylinRuntime.about": "\u5173\u4E8E Kylin",
+            "kylinRuntime.compile": "(\u5DF2\u7F16\u8BD1)"
+          },
+          ja: {
+            "kylinRuntime.name": "\u{1F6E0}\uFE0F Kylin Runtime",
+            "kylinRuntime.about": "Kylin \u306B\u3064\u3044\u3066",
+            "kylinRuntime.compile": "(\u30B3\u30F3\u30D1\u30A4\u30EB\u6E08)"
+          }
+        });
+      } catch (e) {
+      }
+    }
+    console.groupCollapsed("\u{1F6E0}\uFE0F Kylin Runtime v" + version2);
+    console.log("Kylin is based on the TurboWarp compiler (Gandi build).");
+    console.log("Kylin is distributed under the AGPL-3.0 license.");
+    console.log("Copyright (c) 2024 FurryR, inspired by VeroFess");
+    console.groupEnd();
+    runtime.precompile();
+    console.log("\u{1F527} Precompiled code cache");
+    class KylinRuntime {
+      getInfo() {
+        return {
+          id: "kylinRuntime",
+          name: translate({
+            id: "kylinRuntime.name",
+            default: "\u{1F6E0}\uFE0F Kylin Runtime v" + version2,
+            description: "Kylin Runtime"
+          }),
+          color1: "#00ffda",
+          color2: "#00b39a",
+          blocks: [
+            {
+              blockType: "button",
+              text: "\u{1F50D} " + translate({
+                id: "kylinRuntime.about",
+                default: "About Kylin",
+                description: "About"
+              }),
+              func: "about",
+              onClick: () => this.about()
+            },
+            {
+              blockType: "command",
+              opcode: "compile",
+              text: translate({
+                id: "kylinRuntime.compile",
+                default: "(Compiled)",
+                description: "Precompile"
+              }),
+              hideFromPalette: true
+            }
+          ]
+        };
+      }
+      about() {
+        const link = document.createElement("a");
+        link.href = "https://github.com/FurryR/kylin-extension";
+        link.target = "_blank";
+        link.rel = "noopener noreferrer";
+        link.click();
+      }
+      compile() {
+        throw new Error("This block should never be executed.");
+      }
+    }
+    Scratch.extensions.register(new KylinRuntime());
+  }
+
+  // src/gandi.ts
+  var EXTENSION_ID = "KylinGandi";
+  var RUNTIME_ID = "kylinRuntime";
+  function fallbackTranslate(message) {
+    return typeof message === "string" ? message : message.default;
+  }
+  function makeTranslator(Scratch, runtime) {
+    const scratchTranslate = Scratch && typeof Scratch.translate === "function" ? Scratch.translate : null;
+    if (scratchTranslate && typeof scratchTranslate.setup === "function") {
+      try {
+        scratchTranslate.setup(l10n_default);
+      } catch (e) {
+        console.warn("Kylin: setup translations failed", e);
+      }
+      const t = ((message) => {
+        try {
+          return scratchTranslate(message);
+        } catch (e) {
+          return fallbackTranslate(message);
+        }
+      });
+      t.setup = scratchTranslate.setup.bind(scratchTranslate);
+      return t;
+    }
+    const formatMessage = runtime && typeof runtime.getFormatMessage === "function" ? runtime.getFormatMessage(l10n_default) : null;
+    if (typeof formatMessage === "function") {
+      const t = ((message) => {
+        if (typeof message === "string") return message;
+        try {
+          return formatMessage(message);
+        } catch (e) {
+          return fallbackTranslate(message);
+        }
+      });
+      if (typeof formatMessage.setup === "function") {
+        t.setup = formatMessage.setup.bind(formatMessage);
+      }
+      return t;
+    }
+    return fallbackTranslate;
+  }
+  function resolveVM(runtime) {
+    const candidates = [];
+    const push2 = (v) => {
+      if (v && candidates.indexOf(v) < 0) candidates.push(v);
+    };
+    try {
+      push2(runtime && runtime.extensionManager && runtime.extensionManager.vm);
+    } catch (e) {
+    }
+    try {
+      const scratch = globalThis.Scratch;
+      push2(scratch && scratch.vm);
+    } catch (e) {
+    }
+    try {
+      const api = runtime && runtime.ccwAPI;
+      if (api && typeof api.getOpenVM === "function") push2(api.getOpenVM());
+    } catch (e) {
+    }
+    for (const c of candidates) {
+      if (c && typeof c.saveProjectSb3 === "function" && typeof c.loadProject === "function") {
+        return c;
+      }
+    }
+    for (const c of candidates) {
+      if (c && typeof c.loadProject === "function") return c;
+    }
+    return null;
+  }
+  function idle() {
+    return new Promise((resolve) => {
+      const g = globalThis;
+      if (typeof g.requestIdleCallback === "function") {
+        g.requestIdleCallback(() => resolve());
+      } else {
+        setTimeout(resolve, 0);
+      }
+    });
+  }
+  function loadedExtensionsMap(extensionManager) {
+    const raw = extensionManager && extensionManager._loadedExtensions;
+    const map = raw && raw.value instanceof Map ? raw.value : raw;
+    return map && typeof map.keys === "function" ? map : null;
+  }
+  async function refreshPalette(runtime, extensionIds = [EXTENSION_ID, RUNTIME_ID]) {
+    const em = runtime && runtime.extensionManager;
+    if (!em || typeof em.refreshBlocks !== "function") return;
+    const loaded = loadedExtensionsMap(em);
+    const serviceNames = [];
+    for (const id of extensionIds) {
+      const name = loaded && typeof loaded.get === "function" ? loaded.get(id) : null;
+      if (typeof name === "string" && name) serviceNames.push(name);
+    }
+    if (serviceNames.length === 0) {
+      console.warn(
+        "Kylin: \u627E\u4E0D\u5230\u81EA\u5DF1\u7684\u6269\u5C55\u670D\u52A1\u540D\uFF0C\u8DF3\u8FC7\u9762\u677F\u5237\u65B0\uFF08\u907F\u514D\u8BEF\u5237\u5176\u5B83\u6269\u5C55\uFF09\u3002\u6309\u94AE\u6587\u5B57\u53EF\u80FD\u4E0D\u662F\u6700\u65B0\u7684\u3002"
+      );
+      return;
+    }
+    try {
+      await Promise.all(serviceNames.map((name) => em.refreshBlocks(name)));
+    } catch (e) {
+      console.warn("Kylin: refreshBlocks failed", e);
+    }
+  }
+  function button(text, method, handler) {
+    return {
+      blockType: "button",
+      text,
+      func: method,
+      onClick: handler
+    };
+  }
+  function label(text) {
+    return {
+      blockType: "label",
+      text
+    };
+  }
+  var separator = "---";
+  async function buildRuntimeSource(sourceMap, version2) {
+    const banner = "// Kylin Runtime \u2014\u2014 \u672C\u4F5C\u54C1\u5DF2\u88AB Kylin \u6DF7\u6DC6\uFF0C\u9700\u8981\u5141\u8BB8\u8BE5\u6269\u5C55\u4EE5\u975E\u6C99\u76D2\u65B9\u5F0F\u8FD0\u884C\u3002\n";
+    const expression = `(${kylinRuntime.toString()})(Scratch, ${JSON.stringify(
+      version2
+    )}, ${JSON.stringify(sourceMap)})`;
+    const raw = banner + expression;
+    try {
+      const result = await minify(raw, { compress: true });
+      return result.code ?? raw;
+    } catch (e) {
+      console.warn("Kylin: \u538B\u7F29\u8FD0\u884C\u65F6\u4EE3\u7801\u5931\u8D25\uFF0C\u6539\u7528\u672A\u538B\u7F29\u7248\u672C\u3002", e);
+      return raw;
+    }
+  }
+  function createRuntimeShim(vm, runtime, translate) {
+    let instance = null;
+    const translateShim = (message) => translate(message);
+    translateShim.setup = () => {
+    };
+    const scratch = {
+      extensions: {
+        unsandboxed: true,
+        register: (extension) => {
+          instance = extension;
+        }
+      },
+      vm,
+      runtime,
+      renderer: runtime ? runtime.renderer : null,
+      translate: translateShim
+    };
+    return {
+      scratch,
+      getInstance: () => instance
+    };
+  }
+  var EXTENSION_ASSET_NAME = "Extension";
+  var KYLIN_ASSET_ID = "kylin_runtime_extension";
+  function findForeignExtensionAsset(gandi) {
+    if (!gandi || typeof gandi.getExtensionAssets !== "function") return null;
+    const assets = gandi.getExtensionAssets() || [];
+    for (const asset of assets) {
+      if (asset && asset.id !== KYLIN_ASSET_ID) return asset;
+    }
+    return null;
+  }
+  function checkRuntimeAssetSupport(runtime) {
+    if (!runtime) return { ok: false, reason: "runtime \u4E0D\u53EF\u7528" };
+    const extensionManager = runtime.extensionManager;
+    if (!extensionManager || typeof extensionManager.addCustomExtensionInfo !== "function") {
+      return { ok: false, reason: "\u627E\u4E0D\u5230 Gandi \u7684 extensionManager" };
+    }
+    const storage = runtime.storage;
+    if (!storage || typeof storage.createAsset !== "function") {
+      return { ok: false, reason: "runtime.storage.createAsset \u4E0D\u53EF\u7528" };
+    }
+    if (typeof storage.store !== "function") {
+      return { ok: false, reason: "runtime.storage.store \u4E0D\u53EF\u7528\uFF08\u65E0\u6CD5\u4E0A\u4F20\u8D44\u6E90\uFF09" };
+    }
+    if (!storage.AssetType || !storage.AssetType.Extension) {
+      return { ok: false, reason: "\u5F53\u524D storage \u4E0D\u652F\u6301 AssetType.Extension" };
+    }
+    if (typeof storage.projectAssetCDNHost !== "string" || !storage.projectAssetCDNHost) {
+      return { ok: false, reason: "storage.projectAssetCDNHost \u4E0D\u53EF\u7528" };
+    }
+    const gandi = runtime.gandi;
+    if (!gandi || typeof gandi.addAsset !== "function" || typeof gandi.addWildExtension !== "function") {
+      return { ok: false, reason: "runtime.gandi \u4E0D\u53EF\u7528" };
+    }
+    if (findForeignExtensionAsset(gandi)) {
+      return {
+        ok: false,
+        reason: "\u4F5C\u54C1\u91CC\u5DF2\u7ECF\u6709\u540D\u4E3A \u201CExtension\u201D \u7684\u8D44\u6E90\u4E86\uFF08Gandi \u4E00\u4E2A\u4F5C\u54C1\u53EA\u80FD\u6709\u4E00\u4E2A\uFF09\uFF0CKylin \u4E0D\u4F1A\u53BB\u52A8\u5B83"
+      };
+    }
+    return { ok: true };
+  }
+  async function createGandiExtensionAsset(runtime, code) {
+    const storage = runtime && runtime.storage;
+    const gandi = runtime && runtime.gandi;
+    if (!storage || !gandi || typeof gandi.addAsset !== "function") return null;
+    if (typeof storage.createAsset !== "function") return null;
+    const type = storage.AssetType && storage.AssetType.Extension;
+    if (!type || !type.runtimeFormat) return null;
+    if (findForeignExtensionAsset(gandi)) {
+      console.warn("Kylin: \u4F5C\u54C1\u91CC\u5DF2\u7ECF\u6709\u522B\u7684 \u201CExtension\u201D \u8D44\u6E90\u4E86\uFF0C\u4E0D\u53BB\u52A8\u5B83\u3002");
+      return null;
+    }
+    const dataFormat = type.runtimeFormat;
+    const bytes = new TextEncoder().encode(code);
+    const asset = storage.createAsset(type, dataFormat, bytes, null, true);
+    if (!asset || !asset.assetId) return null;
+    const md5 = `${asset.assetId}.${dataFormat}`;
+    const uploadResult = await storage.store(type, dataFormat, bytes, asset.assetId);
+    if (!uploadResult || uploadResult.status !== "ok") {
+      console.warn("Kylin: \u8FD0\u884C\u65F6\u8D44\u6E90\u4E0A\u4F20\u5931\u8D25", uploadResult);
+      return null;
+    }
+    const host = storage.projectAssetCDNHost;
+    if (typeof host !== "string" || !host) return null;
+    try {
+      const stale = typeof gandi.getExtensionAssets === "function" ? gandi.getExtensionAssets().filter((a) => a && a.id === KYLIN_ASSET_ID) : [];
+      for (const old of stale) {
+        if (typeof runtime.deleteGandiAssetById === "function") {
+          runtime.deleteGandiAssetById(old.id);
+        }
+      }
+    } catch (e) {
+      console.warn("Kylin: \u6E05\u7406\u65E7\u7684\u8FD0\u884C\u65F6\u8D44\u6E90\u5931\u8D25", e);
+    }
+    const entry = {
+      name: EXTENSION_ASSET_NAME,
+      dataFormat,
+      asset,
+      assetType: type,
+      id: KYLIN_ASSET_ID,
+      assetId: asset.assetId,
+      md5
+    };
+    gandi.addAsset(entry);
+    return { url: `${host}/${md5}`, md5, entry };
+  }
+  async function installRuntime(options) {
+    const { runtime, vm, sourceMap, version: version2, url, translate } = options;
+    if (!runtime || !vm) return null;
+    const shim = createRuntimeShim(vm, runtime, translate);
+    await kylinRuntime(shim.scratch, version2, sourceMap);
+    const instance = shim.getInstance();
+    const extensionManager = runtime.extensionManager;
+    if (!extensionManager) {
+      console.warn("Kylin: \u627E\u4E0D\u5230 extensionManager\uFF0C\u8FD0\u884C\u65F6\u4E0D\u4F1A\u88AB\u5185\u5D4C\u8FDB\u4F5C\u54C1\u3002");
+      return { url };
+    }
+    try {
+      extensionManager.addCustomExtensionInfo(
+        {
+          info: {
+            name: "\u{1F6E0}\uFE0F Kylin Runtime",
+            description: "Kylin \u6DF7\u6DC6\u4F5C\u54C1\u7684\u8FD0\u884C\u65F6\u3002\u6253\u5F00\u672C\u4F5C\u54C1\u65F6\u5FC5\u987B\u5141\u8BB8\u8BE5\u6269\u5C55\u4EE5\u975E\u6C99\u76D2\u65B9\u5F0F\u8FD0\u884C\u3002",
+            extensionId: RUNTIME_ID,
+            featured: false,
+            disabled: false,
+            collaboratorList: [
+              {
+                collaborator: "FurryR",
+                collaboratorURL: "https://github.com/FurryR"
+              }
+            ]
+          },
+          l10n: {
+            "zh-cn": {
+              "kylinRuntime.name": "\u{1F6E0}\uFE0F Kylin Runtime",
+              "kylinRuntime.description": "Kylin \u6DF7\u6DC6\u4F5C\u54C1\u7684\u8FD0\u884C\u65F6\u3002\u6253\u5F00\u672C\u4F5C\u54C1\u65F6\u5FC5\u987B\u5141\u8BB8\u8BE5\u6269\u5C55\u4EE5\u975E\u6C99\u76D2\u65B9\u5F0F\u8FD0\u884C\u3002"
+            },
+            en: {
+              "kylinRuntime.name": "\u{1F6E0}\uFE0F Kylin Runtime",
+              "kylinRuntime.description": "Runtime of a Kylin-obfuscated project. It must be allowed to run unsandboxed."
+            }
+          },
+          Extension: instance ? instance.constructor : void 0
+        },
+        url
+      );
+    } catch (e) {
+      console.warn(
+        "Kylin: \u767B\u8BB0\u8FD0\u884C\u65F6\u6269\u5C55 URL \u5931\u8D25\uFF0C\u4FDD\u5B58\u51FA\u6765\u7684\u4F5C\u54C1\u53EF\u80FD\u65E0\u6CD5\u81EA\u52A8\u52A0\u8F7D\u8FD0\u884C\u65F6\u3002",
+        e
+      );
+    }
+    try {
+      if (runtime.gandi && typeof runtime.gandi.addWildExtension === "function") {
+        runtime.gandi.addWildExtension({ id: RUNTIME_ID, url });
+      }
+    } catch (e) {
+    }
+    let loaded = false;
+    try {
+      loaded = typeof extensionManager.isExtensionLoaded === "function" && extensionManager.isExtensionLoaded(RUNTIME_ID);
+    } catch (e) {
+    }
+    if (!loaded && instance) {
+      try {
+        extensionManager.registerExtension(RUNTIME_ID, instance);
+      } catch (e) {
+        console.warn("Kylin: \u6CE8\u518C\u8FD0\u884C\u65F6\u6269\u5C55\u5931\u8D25", e);
+      }
+    }
+    return { url };
+  }
+
   // src/compile.ts
   var COMPILE_BLOCK_OPCODE = "kylinRuntime_compile";
   var CORE_BLOCK_PREFIXES = /* @__PURE__ */ new Set([
@@ -31222,7 +31869,7 @@
         return false;
       }
     };
-    const isKylinExtension = (id) => id === "kylin" || id === "kylinRuntime" || id.startsWith("kylinRuntime");
+    const isKylinExtension = (id) => id === EXTENSION_ID || id === RUNTIME_ID || id.startsWith(RUNTIME_ID);
     const extensionIdOf = (opcode) => {
       const index = opcode.indexOf("_");
       return index > 0 ? opcode.substring(0, index) : "";
@@ -31706,653 +32353,6 @@ ${preview}`
       lines.push(`   \u2026 \u8FD8\u6709 ${result.issues.length - 40} \u5904\uFF0C\u89C1\u63A7\u5236\u53F0`);
     }
     return lines;
-  }
-
-  // src/l10n.ts
-  var l10n_default = {
-    "zh-cn": {
-      "kylin.name": "\u{1F409} Kylin (Gandi)",
-      "kylin.hint.about": "\u5173\u4E8E Kylin",
-      "kylin.hint.obfuscated": "\u6E90\u4EE3\u7801\u6DF7\u6DC6",
-      "kylin.hint.precompiled": "\u9884\u7F16\u8BD1",
-      "kylin.hint.comment": "\u6CE8\u91CA",
-      "kylin.hint.loading": "\u7A0D\u5B89\u52FF\u8E81...",
-      "kylin.hint.protected": "\u4F5C\u54C1\u5DF2\u88AB\u4FDD\u62A4",
-      "kylin.hint.extInterp": "\u7B2C\u4E09\u65B9\u6269\u5C55\u811A\u672C",
-      "kylin.extInterp.keep": "\u89E3\u91CA\u6267\u884C",
-      "kylin.extInterp.compile": "\u4E00\u5E76\u7F16\u8BD1",
-      "kylin.error.noRuntimeAsset": "\u7531\u4E8E\u4FEE\u6539\u8005\u6C34\u5E73\u95EE\u9898\u5C1A\u672A\u5728Gandi\u5B9E\u73B0\u8BE5\u529F\u80FD\uFF0C\u9884\u7F16\u8BD1\u65E0\u6CD5\u8FDB\u884C\u3002\n\u8BF7\u5173\u95ED\u300C\u9884\u7F16\u8BD1\u300D\uFF0C\u53EA\u4F7F\u7528\u300C\u6E90\u4EE3\u7801\u6DF7\u6DC6\u300D",
-      "kylin.error.runtimeUploadFailed": "\u8FD0\u884C\u65F6\u8D44\u6E90\u4E0A\u4F20\u5931\u8D25\uFF08storage.store \u6CA1\u6709\u8FD4\u56DE ok\uFF09\u3002\u8BF7\u68C0\u67E5\u767B\u5F55\u72B6\u6001\u4E0E\u7F51\u7EDC\uFF0C\u6216\u5173\u95ED\u300C\u9884\u7F16\u8BD1\u300D\u3002",
-      "kylin.alert.restored": "\u6DF7\u6DC6\u5931\u8D25\uFF0C\u4F5C\u54C1\u5DF2\u8FD8\u539F\u5230\u6DF7\u6DC6\u524D\u7684\u72B6\u6001\u3002",
-      "kylin.button.comments": "\u6CE8\u91CA",
-      "kylin.button.uuid": "UUID (\u9AD8\u7EA7)",
-      "kylin.button.proceed": "\u6DF7\u6DC6",
-      "kylin.popup.comment": "\u8BF7\u8F93\u5165\u4F5C\u54C1\u7684\u6CE8\u91CA\u3002",
-      "kylin.popup.uuid": "\u8BF7\u8F93\u5165\u4F5C\u54C1\u7684 v4 UUID\u3002",
-      "kylin.popup.uuid.invalid": "\u65E0\u6548\u7684 v4 UUID\u3002",
-      "kylin.error.nonScratch": "Kylin \u5FC5\u987B\u5728 Scratch / Gandi IDE \u73AF\u5883\u4E2D\u8FD0\u884C\u3002",
-      "kylin.error.sandbox": "Kylin \u4E0D\u652F\u6301\u6C99\u76D2\u6A21\u5F0F\uFF0C\u8BF7\u4EE5\u201C\u975E\u6C99\u76D2\u201D\u65B9\u5F0F\u52A0\u8F7D\u672C\u6269\u5C55\u3002",
-      "kylin.error.noCompiler": "\u5F53\u524D\u73AF\u5883\u6CA1\u6709\u53EF\u7528\u7684\u7F16\u8BD1\u5668\uFF08runtime.precompile \u4E0D\u5B58\u5728\uFF09\uFF0C\u65E0\u6CD5\u4F7F\u7528\u9884\u7F16\u8BD1\u529F\u80FD\u3002",
-      "kylin.error.noVM": "\u65E0\u6CD5\u83B7\u53D6 Gandi \u865A\u62DF\u673A\u7684\u5F15\u7528\uFF0C\u6DF7\u6DC6\u5DF2\u4E2D\u6B62\u3002",
-      "kylin.error.noEditor": "\u8FD9\u662F\u6DF7\u6DC6\u540E\u7684\u4F5C\u54C1\uFF0C\u8BF7\u5728\u7F16\u8F91\u5668\u4E2D\u52A0\u8F7D\u672C\u6269\u5C55\u4EE5\u67E5\u770B\u4F5C\u54C1\u4FE1\u606F\u3002",
-      "kylin.confirm.compileFail": "\u4EE5\u4E0B\u811A\u672C\u65E0\u6CD5\u88AB\u7F16\u8BD1\uFF0C\u5B83\u4EEC\u4F1A\u4FDD\u6301\u300C\u89E3\u91CA\u6267\u884C\u300D\uFF08\u4E0D\u4F1A\u88AB\u5220\u9664\uFF0C\u529F\u80FD\u4E0D\u53D7\u5F71\u54CD\uFF09\uFF1A",
-      "kylin.confirm.compileFailTail": "\u662F\u5426\u7EE7\u7EED\uFF1F",
-      "kylin.confirm.irreversible": "\u26A0\uFE0F\u6DF7\u6DC6\u4EE3\u7801\u662F\u4E0D\u53EF\u9006\u7684\uFF0C\u8BF7\u786E\u4FDD\u4F5C\u54C1\u6E90\u7801\u5DF2\u5907\u4EFD\u26A0\uFE0F",
-      "kylin.confirm.danglingRefs": "\u81EA\u68C0\u53D1\u73B0\u6DF7\u6DC6\u540E\u6709\u79EF\u6728\u5F15\u7528\u4E86\u4E0D\u5B58\u5728\u7684\u4E1C\u897F\uFF0C\u8FD9\u4E9B\u811A\u672C\u5F88\u53EF\u80FD\u4F1A\u5931\u6548\uFF1A",
-      "kylin.confirm.restoreSnapshot": "\u662F\u5426\u8FD8\u539F\u5230\u6DF7\u6DC6\u524D\u7684\u4F5C\u54C1\uFF1F\uFF08\u5EFA\u8BAE\u8FD8\u539F\uFF09",
-      "kylin.alert.about": "Kylin \u662F Scratch / TurboWarp \u751F\u6001\u7684\u6DF7\u6DC6\u5668\uFF0C\u672C\u7248\u672C\u9488\u5BF9 Gandi IDE (ccw.site) \u505A\u4E86\u9002\u914D\u3002\n\n\u26A0\uFE0F\u6DF7\u6DC6\u524D\u8BF7\u201C\u4FDD\u5B58\u5230\u7535\u8111\u201D\u5907\u4EFD\u4F5C\u54C1\uFF0C\u6DF7\u6DC6\u662F\u4E0D\u53EF\u9006\u7684\u26A0\uFE0F",
-      "kylinRuntime.name": "\u{1F6E0}\uFE0F Kylin Runtime",
-      "kylinRuntime.description": "Kylin \u6DF7\u6DC6\u4F5C\u54C1\u7684\u8FD0\u884C\u65F6\u3002\u52A0\u8F7D\u672C\u4F5C\u54C1\u65F6\u5FC5\u987B\u5141\u8BB8\u8BE5\u6269\u5C55\u4EE5\u975E\u6C99\u76D2\u65B9\u5F0F\u8FD0\u884C\u3002",
-      "kylinRuntime.about": "\u5173\u4E8E Kylin",
-      "kylinRuntime.compile": "(\u5DF2\u7F16\u8BD1)"
-    },
-    en: {
-      "kylin.name": "\u{1F409} Kylin (Gandi)",
-      "kylin.hint.about": "About Kylin",
-      "kylin.hint.obfuscated": "Obfuscation",
-      "kylin.hint.precompiled": "Precompilation",
-      "kylin.hint.comment": "Comment",
-      "kylin.hint.loading": "Loading...",
-      "kylin.hint.protected": "Project protected",
-      "kylin.hint.extInterp": "Third-party ext blocks",
-      "kylin.extInterp.keep": "Interpret",
-      "kylin.extInterp.compile": "Compile",
-      "kylin.error.noRuntimeAsset": 'This environment cannot carry the runtime as a Gandi "Extension" project asset, so precompilation is unavailable.\nTurn off "Precompilation" and use "Obfuscation" only.',
-      "kylin.error.runtimeUploadFailed": 'Failed to upload the runtime asset (storage.store did not return ok). Check your session/network, or turn off "Precompilation".',
-      "kylin.alert.restored": "The project has been restored to its pre-obfuscation state.",
-      "kylin.button.comments": "Comments",
-      "kylin.button.uuid": "UUID (Advanced)",
-      "kylin.button.proceed": "Proceed",
-      "kylin.popup.comment": "Please input the project's comment.",
-      "kylin.popup.uuid": "Please input the project's v4 UUID.",
-      "kylin.popup.uuid.invalid": "Invalid v4 UUID.",
-      "kylin.error.nonScratch": "Kylin must be running inside Scratch / Gandi IDE.",
-      "kylin.error.sandbox": "Sandboxed mode is not supported. Load this extension unsandboxed.",
-      "kylin.error.noCompiler": "No compiler available (runtime.precompile is missing), precompilation is unavailable.",
-      "kylin.error.noVM": "Unable to reach the Gandi VM, aborting.",
-      "kylin.error.noEditor": "This project has been obfuscated. Load the extension in the editor to inspect its metadata.",
-      "kylin.confirm.compileFail": "The following scripts cannot be compiled and will be kept interpreted (not removed):",
-      "kylin.confirm.compileFailTail": "Continue?",
-      "kylin.confirm.irreversible": "\u26A0\uFE0FObfuscation is irreversible. Make sure you have backed up your project source.\u26A0\uFE0F",
-      "kylin.confirm.danglingRefs": "Self-check found blocks referencing things that no longer exist. Those scripts will probably break:",
-      "kylin.confirm.restoreSnapshot": "Restore the project to its pre-obfuscation state? (recommended)",
-      "kylin.alert.about": "Kylin is an obfuscator for the Scratch / TurboWarp ecosystem; this build targets Gandi IDE (ccw.site).\n\nBack up your project before obfuscating \u2014 it is irreversible.",
-      "kylinRuntime.name": "\u{1F6E0}\uFE0F Kylin Runtime",
-      "kylinRuntime.description": "Runtime of a Kylin-obfuscated project. It must be allowed to run unsandboxed.",
-      "kylinRuntime.about": "About Kylin",
-      "kylinRuntime.compile": "(Compiled)"
-    },
-    ja: {
-      "kylin.name": "\u{1F409} Kylin (Gandi)",
-      "kylin.hint.about": "Kylin \u306B\u3064\u3044\u3066",
-      "kylin.hint.obfuscated": "\u96E3\u8AAD\u5316",
-      "kylin.hint.precompiled": "\u4E8B\u524D\u30B3\u30F3\u30D1\u30A4\u30EB",
-      "kylin.hint.comment": "\u30B3\u30E1\u30F3\u30C8",
-      "kylin.hint.loading": "\u5C11\u3005\u304A\u5F85\u3061\u304F\u3060\u3055\u3044\u3002",
-      "kylin.hint.protected": "\u4FDD\u8B77\u3055\u308C\u305F\u30D7\u30ED\u30B8\u30A7\u30AF\u30C8",
-      "kylin.hint.extInterp": "\u30B5\u30FC\u30C9\u30D1\u30FC\u30C6\u30A3\u62E1\u5F35",
-      "kylin.extInterp.keep": "\u30A4\u30F3\u30BF\u30D7\u30EA\u30BF",
-      "kylin.extInterp.compile": "\u30B3\u30F3\u30D1\u30A4\u30EB",
-      "kylin.error.noRuntimeAsset": "\u3053\u306E\u74B0\u5883\u3067\u306F\u30E9\u30F3\u30BF\u30A4\u30E0\u3092 Gandi \u306E \u201CExtension\u201D \u30A2\u30BB\u30C3\u30C8\u3068\u3057\u3066\u767B\u9332\u3067\u304D\u306A\u3044\u305F\u3081\u3001\u4E8B\u524D\u30B3\u30F3\u30D1\u30A4\u30EB\u306F\u4F7F\u3048\u307E\u305B\u3093\u3002\n\u300C\u4E8B\u524D\u30B3\u30F3\u30D1\u30A4\u30EB\u300D\u3092\u5207\u308A\u3001\u300C\u96E3\u8AAD\u5316\u300D\u306E\u307F\u3092\u4F7F\u7528\u3057\u3066\u304F\u3060\u3055\u3044\u3002",
-      "kylin.error.runtimeUploadFailed": "\u30E9\u30F3\u30BF\u30A4\u30E0\u30A2\u30BB\u30C3\u30C8\u306E\u30A2\u30C3\u30D7\u30ED\u30FC\u30C9\u306B\u5931\u6557\u3057\u307E\u3057\u305F\uFF08storage.store \u304C ok \u3092\u8FD4\u3057\u307E\u305B\u3093\u3067\u3057\u305F\uFF09\u3002",
-      "kylin.alert.restored": "\u96E3\u8AAD\u5316\u306B\u5931\u6557\u3057\u307E\u3057\u305F\u3002\u4F5C\u54C1\u3092\u5143\u306E\u72B6\u614B\u306B\u623B\u3057\u307E\u3057\u305F\u3002",
-      "kylin.button.comments": "\u30B3\u30E1\u30F3\u30C8",
-      "kylin.button.uuid": "UUID (\u4E0A\u7D1A\u8005\u5411\u3051)",
-      "kylin.button.proceed": "\u96E3\u8AAD\u5316\u3059\u308B",
-      "kylin.popup.comment": "\u30D7\u30ED\u30B8\u30A7\u30AF\u30C8\u306E\u30B3\u30E1\u30F3\u30C8\u3092\u5165\u529B\u3057\u3066\u304F\u3060\u3055\u3044\u3002",
-      "kylin.popup.uuid": "\u30D7\u30ED\u30B8\u30A7\u30AF\u30C8\u306E v4 UUID \u3092\u5165\u529B\u3057\u3066\u304F\u3060\u3055\u3044\u3002",
-      "kylin.popup.uuid.invalid": "\u7121\u52B9\u306A v4 UUID \u3067\u3059\u3002",
-      "kylin.error.nonScratch": "Kylin \u306F Scratch / Gandi IDE \u4E0A\u3067\u5B9F\u884C\u3059\u308B\u5FC5\u8981\u304C\u3042\u308A\u307E\u3059\u3002",
-      "kylin.error.sandbox": "\u30B5\u30F3\u30C9\u30DC\u30C3\u30AF\u30B9\u30E2\u30FC\u30C9\u306F\u5BFE\u5FDC\u3057\u3066\u3044\u307E\u305B\u3093\u3002\u975E\u30B5\u30F3\u30C9\u30DC\u30C3\u30AF\u30B9\u3067\u8AAD\u307F\u8FBC\u3093\u3067\u304F\u3060\u3055\u3044\u3002",
-      "kylin.error.noCompiler": "\u30B3\u30F3\u30D1\u30A4\u30E9\u30FC\u304C\u898B\u3064\u304B\u308A\u307E\u305B\u3093\uFF08runtime.precompile \u304C\u3042\u308A\u307E\u305B\u3093\uFF09\u3002",
-      "kylin.error.noVM": "Gandi \u306E\u4EEE\u60F3\u30DE\u30B7\u30F3\u3092\u53D6\u5F97\u3067\u304D\u307E\u305B\u3093\u3067\u3057\u305F\u3002",
-      "kylin.error.noEditor": "\u3053\u306E\u4F5C\u54C1\u306F\u3059\u3067\u306B\u96E3\u8AAD\u5316\u3055\u308C\u3066\u3044\u307E\u3059\u3002\u30E1\u30BF\u30C7\u30FC\u30BF\u3092\u898B\u308B\u306B\u306F\u30A8\u30C7\u30A3\u30BF\u30FC\u3067\u62E1\u5F35\u3092\u8AAD\u307F\u8FBC\u3093\u3067\u304F\u3060\u3055\u3044\u3002",
-      "kylin.confirm.compileFail": "\u4EE5\u4E0B\u306E\u30B9\u30AF\u30EA\u30D7\u30C8\u306F\u30B3\u30F3\u30D1\u30A4\u30EB\u3067\u304D\u307E\u305B\u3093\u3002\u30A4\u30F3\u30BF\u30D7\u30EA\u30BF\u5B9F\u884C\u3068\u3057\u3066\u305D\u306E\u307E\u307E\u6B8B\u3057\u307E\u3059\uFF08\u524A\u9664\u3055\u308C\u307E\u305B\u3093\uFF09\uFF1A",
-      "kylin.confirm.compileFailTail": "\u7D9A\u884C\u3057\u307E\u3059\u304B\uFF1F",
-      "kylin.confirm.irreversible": "\u26A0\uFE0F\u96E3\u8AAD\u5316\u306F\u5143\u306B\u623B\u305B\u307E\u305B\u3093\u3002\u4F5C\u54C1\u306E\u30BD\u30FC\u30B9\u3092\u5FC5\u305A\u30D0\u30C3\u30AF\u30A2\u30C3\u30D7\u3057\u3066\u304F\u3060\u3055\u3044\u3002\u26A0\uFE0F",
-      "kylin.confirm.danglingRefs": "\u81EA\u5DF1\u30C1\u30A7\u30C3\u30AF\u3067\u3001\u5B58\u5728\u3057\u306A\u3044\u3082\u306E\u3092\u53C2\u7167\u3057\u3066\u3044\u308B\u30D6\u30ED\u30C3\u30AF\u304C\u898B\u3064\u304B\u308A\u307E\u3057\u305F\u3002\u3053\u308C\u3089\u306E\u30B9\u30AF\u30EA\u30D7\u30C8\u306F\u52D5\u4F5C\u3057\u306A\u304F\u306A\u308B\u53EF\u80FD\u6027\u304C\u3042\u308A\u307E\u3059\uFF1A",
-      "kylin.confirm.restoreSnapshot": "\u96E3\u8AAD\u5316\u524D\u306E\u72B6\u614B\u306B\u623B\u3057\u307E\u3059\u304B\uFF1F\uFF08\u63A8\u5968\uFF09",
-      "kylin.alert.about": "Kylin \u306F Scratch / TurboWarp \u5411\u3051\u306E\u96E3\u8AAD\u5316\u30C4\u30FC\u30EB\u3067\u3059\u3002\u3053\u306E\u30D3\u30EB\u30C9\u306F Gandi IDE (ccw.site) \u5411\u3051\u306B\u8ABF\u6574\u3055\u308C\u3066\u3044\u307E\u3059\u3002\n\n\u96E3\u8AAD\u5316\u306F\u5143\u306B\u623B\u305B\u307E\u305B\u3093\u3002\u4E8B\u524D\u306B\u4F5C\u54C1\u3092\u4FDD\u5B58\u3057\u3066\u304F\u3060\u3055\u3044\u3002",
-      "kylinRuntime.name": "\u{1F6E0}\uFE0F Kylin Runtime",
-      "kylinRuntime.description": "Kylin \u3067\u96E3\u8AAD\u5316\u3055\u308C\u305F\u4F5C\u54C1\u306E\u30E9\u30F3\u30BF\u30A4\u30E0\u3067\u3059\u3002\u975E\u30B5\u30F3\u30C9\u30DC\u30C3\u30AF\u30B9\u3067\u306E\u5B9F\u884C\u304C\u5FC5\u8981\u3067\u3059\u3002",
-      "kylinRuntime.about": "Kylin \u306B\u3064\u3044\u3066",
-      "kylinRuntime.compile": "(\u30B3\u30F3\u30D1\u30A4\u30EB\u6E08)"
-    }
-  };
-
-  // src/runtime.ts
-  async function kylinRuntime(Scratch, version2, sourceMap) {
-    if (!Scratch || Scratch.extensions && Scratch.extensions.unsandboxed === false) {
-      throw new Error("Kylin Runtime \u9700\u8981\u4EE5\u975E\u6C99\u76D2\u65B9\u5F0F\u8FD0\u884C\u3002");
-    }
-    const vm = Scratch.vm;
-    const runtime = vm && vm.runtime;
-    if (!runtime) {
-      throw new Error("Kylin Runtime: \u65E0\u6CD5\u83B7\u53D6 runtime\u3002");
-    }
-    if (typeof runtime.precompile !== "function") {
-      throw new Error("Kylin Runtime: \u5F53\u524D\u73AF\u5883\u6CA1\u6709\u53EF\u7528\u7684\u7F16\u8BD1\u5668\u3002");
-    }
-    runtime._kylinSourceMap = sourceMap;
-    const hasKylinBlocks = () => {
-      const targets = runtime.targets || [];
-      for (let i = 0; i < targets.length; i++) {
-        const blocks = targets[i] && targets[i].blocks && targets[i].blocks._blocks;
-        if (!blocks) continue;
-        for (const id in blocks) {
-          if (blocks[id] && blocks[id].opcode === "kylinRuntime_compile") {
-            return true;
-          }
-        }
-      }
-      return false;
-    };
-    if (!runtime._kylinPatched) {
-      runtime._kylinPatched = true;
-      const _setCompilerOptions = runtime.setCompilerOptions;
-      runtime.setCompilerOptions = function(options) {
-        const next = Object.assign({}, options, { warpTimer: false });
-        if (hasKylinBlocks()) {
-          next.enabled = true;
-        }
-        return _setCompilerOptions.call(this, next);
-      };
-      const { JSGenerator, IRGenerator } = vm.exports.i_will_not_ask_for_help_when_these_break();
-      const originalDescendStack = JSGenerator.prototype.descendStack;
-      const originalCreateScriptFactory = JSGenerator.prototype.createScriptFactory;
-      const originalGenerate = IRGenerator.prototype.generate;
-      const isKylinEntry = (entry) => !!(entry && entry.blocks);
-      const isKylinTopBlock = (blocks, topBlockId) => {
-        if (!blocks || !topBlockId) return false;
-        const top = blocks.getBlock(topBlockId);
-        const nextId = top && top.next;
-        const next = nextId ? blocks.getBlock(nextId) : null;
-        return !!next && next.opcode === "kylinRuntime_compile";
-      };
-      JSGenerator.prototype.descendStack = function(stack, frame) {
-        if (isKylinEntry(this.script)) return;
-        return originalDescendStack.call(this, stack, frame);
-      };
-      IRGenerator.prototype.generate = function() {
-        const thread = this.thread || {};
-        const blocks = this.blocks;
-        const topBlockId = thread.topBlock;
-        if (!isKylinTopBlock(blocks, topBlockId)) {
-          return originalGenerate.call(this);
-        }
-        const registered = {};
-        const register = (proccode, definitionId, definitionBlocks) => {
-          if (!proccode || registered[proccode]) return;
-          registered[proccode] = true;
-          const info = {
-            topBlockId: definitionId,
-            isWarp: false,
-            isProcedure: true,
-            warpTimer: false,
-            blocks: definitionBlocks
-          };
-          this.procedures["W" + proccode] = info;
-          this.procedures["Z" + proccode] = info;
-        };
-        const registerAllIn = (container) => {
-          if (!container || !container._blocks) return;
-          for (const id in container._blocks) {
-            const block = container._blocks[id];
-            if (!block || block.opcode !== "procedures_prototype" || !block.mutation) {
-              continue;
-            }
-            const definition = container.getBlock(block.parent);
-            if (!definition) continue;
-            const bodyId = definition.next;
-            const body = bodyId ? container.getBlock(bodyId) : null;
-            if (!body || body.opcode !== "kylinRuntime_compile") continue;
-            register("" + block.mutation.proccode, block.parent, container);
-          }
-        };
-        registerAllIn(blocks);
-        try {
-          const stage = typeof runtime.getTargetForStage === "function" ? runtime.getTargetForStage() : null;
-          if (stage && stage.blocks && stage.blocks !== blocks) {
-            registerAllIn(stage.blocks);
-          }
-        } catch (e) {
-          console.warn("Kylin Runtime: \u767B\u8BB0\u5168\u5C40\u81EA\u5236\u79EF\u6728\u5931\u8D25", e);
-        }
-        return {
-          entry: {
-            topBlockId,
-            isWarp: false,
-            isProcedure: false,
-            warpTimer: false,
-            blocks
-          },
-          procedures: this.procedures
-        };
-      };
-      JSGenerator.prototype.createScriptFactory = function() {
-        const entry = this.script;
-        if (!isKylinEntry(entry)) {
-          return originalCreateScriptFactory.call(this);
-        }
-        const blocks = entry.blocks;
-        const topBlock = blocks.getBlock(entry.topBlockId);
-        const nextId = topBlock && topBlock.next;
-        const next = nextId ? blocks.getBlock(nextId) : null;
-        if (!next) {
-          return "(function(){return function*(){retire();return;};})";
-        }
-        if (next.opcode === "kylinRuntime_compile") {
-          const table = runtime._kylinSourceMap || sourceMap;
-          const index = parseInt("" + next.fields.code.value, 10);
-          const code = table[index];
-          if (typeof code !== "string") {
-            throw new Error("Kylin Runtime: \u7F3A\u5C11\u5DF2\u7F16\u8BD1\u7684\u811A\u672C " + index);
-          }
-          return "(" + code + ")";
-        }
-        throw new Error("Kylin Runtime: \u9884\u671F\u4E4B\u5916\u7684\u811A\u672C\u7ED3\u6784");
-      };
-      try {
-        runtime.on("PROJECT_LOADED", function() {
-          if (hasKylinBlocks()) runtime.setCompilerOptions({ enabled: true });
-        });
-        runtime.on("targetsUpdate", function() {
-          if (!runtime.compilerOptions.enabled && hasKylinBlocks()) {
-            runtime.setCompilerOptions({ enabled: true });
-          }
-        });
-      } catch (e) {
-      }
-    }
-    try {
-      if (typeof runtime.resetAllCaches === "function") runtime.resetAllCaches();
-    } catch (e) {
-    }
-    const translate = Scratch.translate || function(message) {
-      return typeof message === "string" ? message : message && message.default || "";
-    };
-    if (typeof translate.setup === "function") {
-      try {
-        translate.setup({
-          "zh-cn": {
-            "kylinRuntime.name": "\u{1F6E0}\uFE0F Kylin Runtime",
-            "kylinRuntime.about": "\u5173\u4E8E Kylin",
-            "kylinRuntime.compile": "(\u5DF2\u7F16\u8BD1)"
-          },
-          ja: {
-            "kylinRuntime.name": "\u{1F6E0}\uFE0F Kylin Runtime",
-            "kylinRuntime.about": "Kylin \u306B\u3064\u3044\u3066",
-            "kylinRuntime.compile": "(\u30B3\u30F3\u30D1\u30A4\u30EB\u6E08)"
-          }
-        });
-      } catch (e) {
-      }
-    }
-    console.groupCollapsed("\u{1F6E0}\uFE0F Kylin Runtime v" + version2);
-    console.log("Kylin is based on the TurboWarp compiler (Gandi build).");
-    console.log("Kylin is distributed under the AGPL-3.0 license.");
-    console.log("Copyright (c) 2024 FurryR, inspired by VeroFess");
-    console.groupEnd();
-    runtime.precompile();
-    console.log("\u{1F527} Precompiled code cache");
-    class KylinRuntime {
-      getInfo() {
-        return {
-          id: "kylinRuntime",
-          name: translate({
-            id: "kylinRuntime.name",
-            default: "\u{1F6E0}\uFE0F Kylin Runtime v" + version2,
-            description: "Kylin Runtime"
-          }),
-          color1: "#00ffda",
-          color2: "#00b39a",
-          blocks: [
-            {
-              blockType: "button",
-              text: "\u{1F50D} " + translate({
-                id: "kylinRuntime.about",
-                default: "About Kylin",
-                description: "About"
-              }),
-              func: "about",
-              onClick: () => this.about()
-            },
-            {
-              blockType: "command",
-              opcode: "compile",
-              text: translate({
-                id: "kylinRuntime.compile",
-                default: "(Compiled)",
-                description: "Precompile"
-              }),
-              hideFromPalette: true
-            }
-          ]
-        };
-      }
-      about() {
-        const link = document.createElement("a");
-        link.href = "https://github.com/FurryR/kylin-extension";
-        link.target = "_blank";
-        link.rel = "noopener noreferrer";
-        link.click();
-      }
-      compile() {
-        throw new Error("This block should never be executed.");
-      }
-    }
-    Scratch.extensions.register(new KylinRuntime());
-  }
-
-  // src/gandi.ts
-  var EXTENSION_ID = "kylin";
-  var RUNTIME_ID = "kylinRuntime";
-  function fallbackTranslate(message) {
-    return typeof message === "string" ? message : message.default;
-  }
-  function makeTranslator(Scratch, runtime) {
-    const scratchTranslate = Scratch && typeof Scratch.translate === "function" ? Scratch.translate : null;
-    if (scratchTranslate && typeof scratchTranslate.setup === "function") {
-      try {
-        scratchTranslate.setup(l10n_default);
-      } catch (e) {
-        console.warn("Kylin: setup translations failed", e);
-      }
-      const t = ((message) => {
-        try {
-          return scratchTranslate(message);
-        } catch (e) {
-          return fallbackTranslate(message);
-        }
-      });
-      t.setup = scratchTranslate.setup.bind(scratchTranslate);
-      return t;
-    }
-    const formatMessage = runtime && typeof runtime.getFormatMessage === "function" ? runtime.getFormatMessage(l10n_default) : null;
-    if (typeof formatMessage === "function") {
-      const t = ((message) => {
-        if (typeof message === "string") return message;
-        try {
-          return formatMessage(message);
-        } catch (e) {
-          return fallbackTranslate(message);
-        }
-      });
-      if (typeof formatMessage.setup === "function") {
-        t.setup = formatMessage.setup.bind(formatMessage);
-      }
-      return t;
-    }
-    return fallbackTranslate;
-  }
-  function resolveVM(runtime) {
-    const candidates = [];
-    const push2 = (v) => {
-      if (v && candidates.indexOf(v) < 0) candidates.push(v);
-    };
-    try {
-      push2(runtime && runtime.extensionManager && runtime.extensionManager.vm);
-    } catch (e) {
-    }
-    try {
-      const scratch = globalThis.Scratch;
-      push2(scratch && scratch.vm);
-    } catch (e) {
-    }
-    try {
-      const api = runtime && runtime.ccwAPI;
-      if (api && typeof api.getOpenVM === "function") push2(api.getOpenVM());
-    } catch (e) {
-    }
-    for (const c of candidates) {
-      if (c && typeof c.saveProjectSb3 === "function" && typeof c.loadProject === "function") {
-        return c;
-      }
-    }
-    for (const c of candidates) {
-      if (c && typeof c.loadProject === "function") return c;
-    }
-    return null;
-  }
-  function idle() {
-    return new Promise((resolve) => {
-      const g = globalThis;
-      if (typeof g.requestIdleCallback === "function") {
-        g.requestIdleCallback(() => resolve());
-      } else {
-        setTimeout(resolve, 0);
-      }
-    });
-  }
-  function loadedExtensionsMap(extensionManager) {
-    const raw = extensionManager && extensionManager._loadedExtensions;
-    const map = raw && raw.value instanceof Map ? raw.value : raw;
-    return map && typeof map.keys === "function" ? map : null;
-  }
-  async function refreshPalette(runtime, extensionIds = ["kylin", "kylinRuntime"]) {
-    const em = runtime && runtime.extensionManager;
-    if (!em || typeof em.refreshBlocks !== "function") return;
-    const loaded = loadedExtensionsMap(em);
-    const serviceNames = [];
-    for (const id of extensionIds) {
-      const name = loaded && typeof loaded.get === "function" ? loaded.get(id) : null;
-      if (typeof name === "string" && name) serviceNames.push(name);
-    }
-    if (serviceNames.length === 0) {
-      console.warn(
-        "Kylin: \u627E\u4E0D\u5230\u81EA\u5DF1\u7684\u6269\u5C55\u670D\u52A1\u540D\uFF0C\u8DF3\u8FC7\u9762\u677F\u5237\u65B0\uFF08\u907F\u514D\u8BEF\u5237\u5176\u5B83\u6269\u5C55\uFF09\u3002\u6309\u94AE\u6587\u5B57\u53EF\u80FD\u4E0D\u662F\u6700\u65B0\u7684\u3002"
-      );
-      return;
-    }
-    try {
-      await Promise.all(serviceNames.map((name) => em.refreshBlocks(name)));
-    } catch (e) {
-      console.warn("Kylin: refreshBlocks failed", e);
-    }
-  }
-  function button(text, method, handler) {
-    return {
-      blockType: "button",
-      text,
-      func: method,
-      onClick: handler
-    };
-  }
-  function label(text) {
-    return {
-      blockType: "label",
-      text
-    };
-  }
-  var separator = "---";
-  async function buildRuntimeSource(sourceMap, version2) {
-    const banner = "// Kylin Runtime \u2014\u2014 \u672C\u4F5C\u54C1\u5DF2\u88AB Kylin \u6DF7\u6DC6\uFF0C\u9700\u8981\u5141\u8BB8\u8BE5\u6269\u5C55\u4EE5\u975E\u6C99\u76D2\u65B9\u5F0F\u8FD0\u884C\u3002\n";
-    const expression = `(${kylinRuntime.toString()})(Scratch, ${JSON.stringify(
-      version2
-    )}, ${JSON.stringify(sourceMap)})`;
-    const raw = banner + expression;
-    try {
-      const result = await minify(raw, { compress: true });
-      return result.code ?? raw;
-    } catch (e) {
-      console.warn("Kylin: \u538B\u7F29\u8FD0\u884C\u65F6\u4EE3\u7801\u5931\u8D25\uFF0C\u6539\u7528\u672A\u538B\u7F29\u7248\u672C\u3002", e);
-      return raw;
-    }
-  }
-  function createRuntimeShim(vm, runtime, translate) {
-    let instance = null;
-    const translateShim = (message) => translate(message);
-    translateShim.setup = () => {
-    };
-    const scratch = {
-      extensions: {
-        unsandboxed: true,
-        register: (extension) => {
-          instance = extension;
-        }
-      },
-      vm,
-      runtime,
-      renderer: runtime ? runtime.renderer : null,
-      translate: translateShim
-    };
-    return {
-      scratch,
-      getInstance: () => instance
-    };
-  }
-  var EXTENSION_ASSET_NAME = "Extension";
-  var KYLIN_ASSET_ID = "kylin_runtime_extension";
-  function findForeignExtensionAsset(gandi) {
-    if (!gandi || typeof gandi.getExtensionAssets !== "function") return null;
-    const assets = gandi.getExtensionAssets() || [];
-    for (const asset of assets) {
-      if (asset && asset.id !== KYLIN_ASSET_ID) return asset;
-    }
-    return null;
-  }
-  function checkRuntimeAssetSupport(runtime) {
-    if (!runtime) return { ok: false, reason: "runtime \u4E0D\u53EF\u7528" };
-    const extensionManager = runtime.extensionManager;
-    if (!extensionManager || typeof extensionManager.addCustomExtensionInfo !== "function") {
-      return { ok: false, reason: "\u627E\u4E0D\u5230 Gandi \u7684 extensionManager" };
-    }
-    const storage = runtime.storage;
-    if (!storage || typeof storage.createAsset !== "function") {
-      return { ok: false, reason: "runtime.storage.createAsset \u4E0D\u53EF\u7528" };
-    }
-    if (typeof storage.store !== "function") {
-      return { ok: false, reason: "runtime.storage.store \u4E0D\u53EF\u7528\uFF08\u65E0\u6CD5\u4E0A\u4F20\u8D44\u6E90\uFF09" };
-    }
-    if (!storage.AssetType || !storage.AssetType.Extension) {
-      return { ok: false, reason: "\u5F53\u524D storage \u4E0D\u652F\u6301 AssetType.Extension" };
-    }
-    if (typeof storage.projectAssetCDNHost !== "string" || !storage.projectAssetCDNHost) {
-      return { ok: false, reason: "storage.projectAssetCDNHost \u4E0D\u53EF\u7528" };
-    }
-    const gandi = runtime.gandi;
-    if (!gandi || typeof gandi.addAsset !== "function" || typeof gandi.addWildExtension !== "function") {
-      return { ok: false, reason: "runtime.gandi \u4E0D\u53EF\u7528" };
-    }
-    if (findForeignExtensionAsset(gandi)) {
-      return {
-        ok: false,
-        reason: "\u4F5C\u54C1\u91CC\u5DF2\u7ECF\u6709\u540D\u4E3A \u201CExtension\u201D \u7684\u8D44\u6E90\u4E86\uFF08Gandi \u4E00\u4E2A\u4F5C\u54C1\u53EA\u80FD\u6709\u4E00\u4E2A\uFF09\uFF0CKylin \u4E0D\u4F1A\u53BB\u52A8\u5B83"
-      };
-    }
-    return { ok: true };
-  }
-  async function createGandiExtensionAsset(runtime, code) {
-    const storage = runtime && runtime.storage;
-    const gandi = runtime && runtime.gandi;
-    if (!storage || !gandi || typeof gandi.addAsset !== "function") return null;
-    if (typeof storage.createAsset !== "function") return null;
-    const type = storage.AssetType && storage.AssetType.Extension;
-    if (!type || !type.runtimeFormat) return null;
-    if (findForeignExtensionAsset(gandi)) {
-      console.warn("Kylin: \u4F5C\u54C1\u91CC\u5DF2\u7ECF\u6709\u522B\u7684 \u201CExtension\u201D \u8D44\u6E90\u4E86\uFF0C\u4E0D\u53BB\u52A8\u5B83\u3002");
-      return null;
-    }
-    const dataFormat = type.runtimeFormat;
-    const bytes = new TextEncoder().encode(code);
-    const asset = storage.createAsset(type, dataFormat, bytes, null, true);
-    if (!asset || !asset.assetId) return null;
-    const md5 = `${asset.assetId}.${dataFormat}`;
-    const uploadResult = await storage.store(type, dataFormat, bytes, asset.assetId);
-    if (!uploadResult || uploadResult.status !== "ok") {
-      console.warn("Kylin: \u8FD0\u884C\u65F6\u8D44\u6E90\u4E0A\u4F20\u5931\u8D25", uploadResult);
-      return null;
-    }
-    const host = storage.projectAssetCDNHost;
-    if (typeof host !== "string" || !host) return null;
-    try {
-      const stale = typeof gandi.getExtensionAssets === "function" ? gandi.getExtensionAssets().filter((a) => a && a.id === KYLIN_ASSET_ID) : [];
-      for (const old of stale) {
-        if (typeof runtime.deleteGandiAssetById === "function") {
-          runtime.deleteGandiAssetById(old.id);
-        }
-      }
-    } catch (e) {
-      console.warn("Kylin: \u6E05\u7406\u65E7\u7684\u8FD0\u884C\u65F6\u8D44\u6E90\u5931\u8D25", e);
-    }
-    const entry = {
-      name: EXTENSION_ASSET_NAME,
-      dataFormat,
-      asset,
-      assetType: type,
-      id: KYLIN_ASSET_ID,
-      assetId: asset.assetId,
-      md5
-    };
-    gandi.addAsset(entry);
-    return { url: `${host}/${md5}`, md5, entry };
-  }
-  async function installRuntime(options) {
-    const { runtime, vm, sourceMap, version: version2, url, translate } = options;
-    if (!runtime || !vm) return null;
-    const shim = createRuntimeShim(vm, runtime, translate);
-    await kylinRuntime(shim.scratch, version2, sourceMap);
-    const instance = shim.getInstance();
-    const extensionManager = runtime.extensionManager;
-    if (!extensionManager) {
-      console.warn("Kylin: \u627E\u4E0D\u5230 extensionManager\uFF0C\u8FD0\u884C\u65F6\u4E0D\u4F1A\u88AB\u5185\u5D4C\u8FDB\u4F5C\u54C1\u3002");
-      return { url };
-    }
-    try {
-      extensionManager.addCustomExtensionInfo(
-        {
-          info: {
-            name: "\u{1F6E0}\uFE0F Kylin Runtime",
-            description: "Kylin \u6DF7\u6DC6\u4F5C\u54C1\u7684\u8FD0\u884C\u65F6\u3002\u6253\u5F00\u672C\u4F5C\u54C1\u65F6\u5FC5\u987B\u5141\u8BB8\u8BE5\u6269\u5C55\u4EE5\u975E\u6C99\u76D2\u65B9\u5F0F\u8FD0\u884C\u3002",
-            extensionId: RUNTIME_ID,
-            featured: false,
-            disabled: false,
-            collaboratorList: [
-              {
-                collaborator: "FurryR",
-                collaboratorURL: "https://github.com/FurryR"
-              }
-            ]
-          },
-          l10n: {
-            "zh-cn": {
-              "kylinRuntime.name": "\u{1F6E0}\uFE0F Kylin Runtime",
-              "kylinRuntime.description": "Kylin \u6DF7\u6DC6\u4F5C\u54C1\u7684\u8FD0\u884C\u65F6\u3002\u6253\u5F00\u672C\u4F5C\u54C1\u65F6\u5FC5\u987B\u5141\u8BB8\u8BE5\u6269\u5C55\u4EE5\u975E\u6C99\u76D2\u65B9\u5F0F\u8FD0\u884C\u3002"
-            },
-            en: {
-              "kylinRuntime.name": "\u{1F6E0}\uFE0F Kylin Runtime",
-              "kylinRuntime.description": "Runtime of a Kylin-obfuscated project. It must be allowed to run unsandboxed."
-            }
-          },
-          Extension: instance ? instance.constructor : void 0
-        },
-        url
-      );
-    } catch (e) {
-      console.warn(
-        "Kylin: \u767B\u8BB0\u8FD0\u884C\u65F6\u6269\u5C55 URL \u5931\u8D25\uFF0C\u4FDD\u5B58\u51FA\u6765\u7684\u4F5C\u54C1\u53EF\u80FD\u65E0\u6CD5\u81EA\u52A8\u52A0\u8F7D\u8FD0\u884C\u65F6\u3002",
-        e
-      );
-    }
-    try {
-      if (runtime.gandi && typeof runtime.gandi.addWildExtension === "function") {
-        runtime.gandi.addWildExtension({ id: RUNTIME_ID, url });
-      }
-    } catch (e) {
-    }
-    let loaded = false;
-    try {
-      loaded = typeof extensionManager.isExtensionLoaded === "function" && extensionManager.isExtensionLoaded(RUNTIME_ID);
-    } catch (e) {
-    }
-    if (!loaded && instance) {
-      try {
-        extensionManager.registerExtension(RUNTIME_ID, instance);
-      } catch (e) {
-        console.warn("Kylin: \u6CE8\u518C\u8FD0\u884C\u65F6\u6269\u5C55\u5931\u8D25", e);
-      }
-    }
-    return { url };
   }
 
   // src/index.ts
